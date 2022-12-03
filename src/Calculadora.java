@@ -9,11 +9,6 @@ public class Calculadora {
         int op;
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("Informe o primeiro valor: ");
-        n1 = entrada.nextInt();
-
-        System.out.println("Informe o segundo valor: ");
-        n2 = entrada.nextInt();
         System.out.println("=======> SELECIONE UMA OPERACAO <=======");
 
         System.out.println("[1] -> SOMAR");
@@ -25,27 +20,34 @@ public class Calculadora {
 
         op = entrada.nextInt();
 
+        System.out.println("Informe o primeiro valor: ");
+        n1 = entrada.nextInt();
+
+        System.out.println("Informe o segundo valor: ");
+        n2 = entrada.nextInt();
+
         switch (op) {
             case 1:
                 soma = n1 + n2;
-                System.out.println("A soma é: " + soma);
+                System.out.println("O resultado da soma é: " + soma);
                 break;
             case 2:
                 subtracao = n1 - n2;
-                System.out.println("A subtração é: " + subtracao);
+                System.out.println("O resultado da subtração é: " + subtracao);
                 break;
             case 3:
                 multiplaicacao = n1 * n2;
-                System.out.println("A multiplicação é: " + multiplaicacao);
+                System.out.println("O resultado dao é: " + multiplaicacao);
                 break;
             case 4:
                 if (n1 < n2) {
                     System.out.println("Imposivel realizar o calculo");
                 } else {
                     divisao = n1 / n2;
-                    System.out.println("A divisão é: " + divisao);
+                    System.out.println("O resultado da divisão é: " + divisao);
                     break;
                 }
+
         }
     }
 }
